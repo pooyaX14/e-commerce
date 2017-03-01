@@ -1,1 +1,1 @@
-# e-commerce webiste using PHP and MySQL
+# e-commerce website using PHP and MySQL
