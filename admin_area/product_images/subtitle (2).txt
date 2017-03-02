@@ -1,0 +1,229 @@
+So far, we've just been typing code into
+Code Sculptor and we typed statements one after another and they get executed
+immediately when we run our program. This is fine for simple programs.
+But a very powerful construct in programming is the function.
+What a function is, is a piece of code that you define that you can execute
+later. And so you only execute the code inside a
+function when you call that function. And I can call the function more than
+once. So this.
+Becomes a very powerful programming construct.
+I define a block of code once and then I can use it many times.
+So in this video, we're going to talk about how to define a function and we're
+going to show some simple functions and some simple calls to those functions.
+Alright, let's write some functions. Now, before we actually type any code we
+have to think about what we want. Beginning programmers often just start
+typing before they think about it. And before I write any function I should
+decide what the function is going to do. And a good way of doing that is to put it
+in a comment. So I am going to write a function that
+computes area of a triangle. Okay?
+And I wanna see all your functions have comments like this.
+You should always put a clear comment that shows, this is what this function does.
+Now, I'm just gonna type the function, and then we're gonna talk about it.
+. And there we are.
+Here's my function for computing the area of a triangle, alright.
+So I wanna talk about, two parts of the function.
+The first which is line two is called the header of the function.
+The second which is the rest of it is the body.
+Okay so what is the header? The header tells you about the function,
+so it starts with the keyword Def. Def is short for define and you're telling
+Python that you want to define a new function.
+Then I have the word triangle area. That is the name of the function and you
+can choose any name that you'd like. All names that are valid, variable names
+are also valid functions names. So you should pick a function name that is
+indicative of what the function does. So I'm gonna compute the area of a
+triangle. I want to call my function triangle area.
+Then. We have a parenthesis list of perameters
+and in this case this function takes two perameters, the base and the height of the
+triangle. The functions can take zero or more
+perameters so, I can have zero, one, two, 100.
+How many perameters you need to compute whatever does you are computing.
+Okay. And you should also name your perameters
+in a way that is obvious to someone who is using your working area program.
+Here base and height are obvious names for their elements of a triangle.
+Okay, then we have a special character, at the end of the header is a colon, a colon
+has huge significance in Python, this means you're about to start a new block of
+code, and you'll notice. The body of the function, which is the
+rest, and this is. Which is this new block, after the colon,
+is indented. It doesn't matter how much it's indented,
+but it does matter, it's indented by the same amount.
+And this has significance. When you stop the indentation, the block
+of code is done, 'kay? So, everything that is indented after that
+colon is the body of the function. And you can see, I have two statements
+that are in the body. The first one is actually computing the
+Area. And you can go to Wikipedia if you've
+forgotten the Area for the, or the formula for the Area of a triangle.
+It's just one-half times base times height.
+Okay. So, I'm computing that to line three.
+Then at line four, I'm returning that area.
+Okay, so what does return mean? Return is another key word in Python that
+says, this is the output of that function. And so, you can output one thing from a
+function, in this case I'm outputting the value of the local variable inside the
+function area, okay? So, let's run this programme and see what
+happens. Hm.
+I keep hitting the run button here, nothing happens.
+Alright, this is signifigant. This defined a function, okay?
+No code executes when I run this program. Why?
+Because a function is a piece of code that I want to be able to execute later.
+It only executes when you call it. So let's actually call this function.
+Let's say, you know, A1 = triangle area. Let's have a base of three and a height of
+eight. Now.
+Beginning programmers often will just run this and say hey, great it works cuz you
+get any old output. Let's think about it first.
+What is the actual output that's expected here.
+Let's print A1. I assume that a triangle with a base of
+three and a height of h and have an area of twelve.
+Let's see if this actually works. It does, okay.
+Now, I wanna point out here. I assign this to A1 and then I printed A1,
+what did A1 get? A1 got the output of the function triangle
+area, what is the output? The output is whatever the function chose
+to return after the return statement, so in this case it was it was a variable area
+which had been assigned to the one half base times height, okay.
+Let's try it with something else A2 equals triangle area fourteen and.
+2.'Kay. Print A2.
+What do we expect the output to be here? I expect it to be fourteen, and lo and
+behold, it is fourteen. Now I want you to think of these functions
+as a box. And this box has a name.
+In this case, it's Triangle. Area and there's some number of inputs, in
+this case there are two inputs, and some of them are outputs zero one, this case
+there's one output okay? The first input.
+Gets named base, the second input gets named height, something happens here, we
+create an output, we call it area and then it goes out.
+Now the key point of this is these names base, height and area, they only exist
+inside this box, they only exist inside the function, you don't actually use them
+anywhere else, alright, and what's happening when I call the function,
+triangle, area I call the function by using the function name in the parenthesis
+and giving some values three, two. Right.
+What happens is three goes in here two goes in there.
+So base gets the value three, height gets the value two.
+I compute the value of the area okay which becomes three and out goes three on this
+side. So if I were to print this I'd get three,
+if I'm gonna assign it to A, A would become three okay.
+This is valuable for many reasons right. A function is now a black box, I don't
+care what's inside of it, I don't care what's going on in this squiggle here all
+I know is that there are two inputs. Base and height and one output and I can
+just use it. I read the comment and I know what it
+does. Okay.
+When I'm implementing the function, I don't have to care how you call it.
+All I know is these two things are going to come into the input and now I can
+implement it in here, you know, one half base times height, forgive me for
+abbreviating base and height for B and H, that computes area.
+This goes to area Right base goes to here, height goes to here, the output of this
+goes to area and I get my output. Alright, back to our code.
+Let's write some more functions. Let's write a function that converts.
+Fahrenheit. If I can spell two Celsius.
+Kay, so, let's define the function. We use Def and we give it a name that
+makes sense Fahrenheit two. We'll be clever with the number two
+Celsius and we take a variable name, we'll, we'll be Clear about that too that
+the variable is the, the value in Fahrenheit of the temperature to convert
+to this I'm going to say Celsius equals five-ninths times Fahrenheit minus 32 and
+we will then return celsuis. Okay.
+So now we have a function that takes a single input just the value in Fahrenheit
+and returns an output in celsuis. Next we should test it we shouldn't just
+trust that it works so let's say c equals fair in height to Celsius.
+Let's take some values that we know the answer, okay.
+See one. To copy paste 2,12.
+So I know freezing and boiling, and we better make this c2.
+Let's print this out, c1, c2. I picked these because it's freezing and
+boiling. So I'm expecting zero and 100 to come out.
+And they do. So I probably wrote this correctly, Okay?
+[inaudible]. Maybe I don't like Celsius okay, I'm a big
+fan of Kelvin. I really feel like you know, absolute zero
+is my friend. So let's convert Fahrenheit to Kelvin
+instead of Celsius. So again I'll give it a useful name.
+I'll name the parameter Correct, I'll spell it correctly okay.
+Now what do I do. Well.
+Hang on a second here. I have a function that converts from
+Fahrenheit to Celsius. I know that Kelvin is Celsius plus 275.
+Thirteen, or 273.15, sorry. But I, I already know how to convert to
+Celsius so it would seem silly to try and write that code again, so let's not.
+Let's call our function. Inside of functions I can write any code,
+or I can use any code that I would use anywhere else.
+So if I already have a function. I can use that too, all right?
+And I know that the Kelvin value. I should be consistent here and not use
+bad variable names. Kelvin value is simply the Celsius value
+plus 273.15. And now I can return Kelvin.
+Alright. Well, I should test this.
+K1 equals Fahrenheit. Two Kelvin.
+Again, let's do some of the ones that we know.
+212 hit two for in to k one, k two, alright let's run this, and we get the
+numbers that numbers that I expect here as well.
+All right, I think this is very important for you to understand.
+Right inside of a function I called another function.
+Right so let's think of this in terms of the boxes again, and hopefully you'll
+forgive me but I am going to use single letters here because I can't write fast
+enough. So I had a function Fahrenheit to Celsius,
+right there's some box here. Okay?
+And it had one input. And that input was my Fahrenheit value.
+I did some calculations, which, we know what they are, right?
+They're five-ninths, you know, f-32. Okay?
+I get out Celsius value, and that comes out.
+Then I wrote another function. I wrote a function Fahrenheit to Kelvin.
+Okay? That's also a black box.
+Alright. Incomes, one input.
+Something happens. We compute Kelvin, and Kelvin goes out,
+right? Now, I wanna make a, an interesting point
+here. I don't care how you implement Fahrenheit
+to Kelvin if I'm using it. So when I call Fahrenheit to Kelvin.
+So somewhere, I call Fahrenheit to Kelvin with 32.
+I just want the right answer. Right?
+I want the answer. I want this to evaluate to 273.15.
+Okay. How you do it?
+That's your business. So when you're in here implementing it,
+there's absolutely no reason why you can't say, hey, Celsius.
+I already know how to do that. F to c of f, right?
+But, you could also recompute it. You could say, you know, I like being
+messy. And I'll just say, instead of that, I'll
+say Celsius = five-ninths Fahrenheit -32. Okay and then I go to Calvin from there,
+alright? So there are many ways to right a
+function, which is better? I would argue that if I already have a
+function to do the job, I should not write the code again, you do not want repeated
+code. If I figure out "Oh I'm screwing this up,
+it's really nine fifths" or whatever right?
+You change it in one place and then it would be fixed in both, okay?
+I think that this is pretty critical alright?
+But keep in mind I have these boxes I don't need to care how they're implemented
+as I use them, and once I have a function it's available to me to use anywhere.
+Alright, I wanna show you one final function here.
+I wanna show you a function that prints hello world, 'kay.
+This function, I'm gonna call it hello, takes no arguments, alright.
+Remember, I said that we don't have to have any parameters or arguments, 'kay.
+And all it does is print hello world, 'kay.
+That's it. Alright, let's test it.
+Cuz we should always test our functions, let's call hello.
+Alright, oops, I've got to spell it right or that definitely is not going to work,
+okay so what happens when we run this function?
+It prints hello world. Okay.
+That's great. That's what I expected it to do.
+Now, what's different about this function from all the other functions we've written
+today? Well, it does not have a return statement.
+This function, if I drew it with, as a box would have no inputs and no outputs.
+Nothing comes into hello. There are no parameters.
+Nothing comes out of hello. There's no return value.
+So what happens when you try to assign it? Say H equals hello.
+Print H. Right.
+Well there's nothing coming back, so what do you think's going to happen?
+Well, Python has a value none, and none means there's nothing there, okay?
+And so Python, if you forget the return statement, or if you don't need a return
+statement, it automatically adds one. So it's exactly like if I typed return
+none. Okay, this none is a special value.
+Alright, so H gets the value none. I can print H and it'll say none.
+Now why do I bring this up? Well, usually you're not writing functions
+like this, you might write a few. But often, you return a value and you
+expect it to return a value but you forgot the return statement and then it sh, none
+will show up here in the console for your variable and I just wanted you to see this
+is probably the most likely reason. You should go look at your function again
+and see if you forgot the return. Okay.
+So this was a quick and dirty introduction to functions.
+Functions are extremely powerful and extremely useful and every program you
+write will include functions. I've only scratched the surface here on
+what you can do with functions and we will see them throughout the course.
+Pretty much every lecture from now on will use functions, every project that you
+write will use functions. So you're gonna get familiar with them
+pretty quickly, all right? I want you to keep in mind the things that
+I've said here. And hopefully, the model of using a box,
+with the inputs and outputs inside the box.
+Those names stay in. Inside the box will be valuable to you.
+Don't forget the colon. Don't forget the indentation.
+And don't forget the return. These are critical pieces of the
+functions. Hopefully, with a little practice.
+You'll understand and be able to use them
